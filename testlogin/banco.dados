@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS `nodeteste` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `nodeteste`;
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `id` int(11) NOT NULL,
+  `useremail` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `login` (`id`, `useremail`, `password`) VALUES (1, 'test@test.com', 'test');
+
+ALTER TABLE `login` ADD PRIMARY KEY (`id`);
+ALTER TABLE `login` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;

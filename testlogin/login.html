@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema de Login</title>
+		<style type="text/css">
+			* {
+  			
+  			box-sizing: border-box;
+  			
+  			
+		}
+
+		body {
+
+  			font-family: Arial, Helvetica, sans-serif;
+  			margin: 0px;
+  			border: none;
+  			
+		}
+
+		nav {
+
+  			float: left;
+  			width: 30%;
+  			height: 300px; 
+  			padding: 20px;
+  			
+        }
+
+        nav ul {
+  			list-style-type: none;
+ 			padding: 0;
+ 			
+		}
+
+		article {
+  			float: left;
+ 		    padding: 20px;
+ 		    width: 70%;
+  			height: 300px;
+  			
+  			}
+
+		section:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+  			
+		}
+		
+		@media (max-width: 600px) {
+  		nav, article {
+    	width: 100%;
+    	height: auto;
+    	
+  }
+}
+
+		.login-form-box {
+			width: 300px;
+			margin: 5% auto;
+			height: 400px;
+			background: #fff;
+			font-family: Tahoma, Geneva, sans-serif;
+			
+		}
+		.login-texto h1{
+
+			text-decoration: underline;
+      		margin: 1 1 20px 1;
+      		font-weight: 300;
+      		font-size: 15px;
+      		color: black;
+      	
+
+		}
+		.login-form h1 {
+			text-align: center;
+			color: black;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+			
+		}
+		
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			display: block;
+			width: 100%;
+			padding: 15px;
+			height: 32px;
+			border: 1px solid;
+			margin-bottom: 35px;
+			box-sizing:0;
+			border: none;
+  			outline: none;
+  			border-bottom: 1px solid #aaa;
+  			
+		}
+		.login-form input[type="submit"] {
+		
+			width: 100%;
+			padding: 15px;
+			background-color: #535b;
+			border: none;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffff;
+			
+		}
+		</style>
+	</head>
+	<body>
+		<section>
+			<nav>
+				<div class="login-texto">
+					<h1>Entrar</h1>
+				</div>
+				<div class="login-form">
+					<h1>Bem Vindo(a)</h1>
+					<form action="auth" method="POST">
+						<input type="text" name="useremail" placeholder="E-mail" required>
+						<input type="password" name="password" placeholder="Senha" required>
+						<input type="submit">
+					</form>
+				</div>
+			</nav>
+			<article>
+				<img src="public/imagem/img.png" alt="Turma de amigos" width="886" height="609">
+			</article>
+		</section>
+	</body>
+</html>
